@@ -1,4 +1,4 @@
 
-project_id = "hackathon-cp-project-team-1"
+project_id = "gemini-test-427500"
 
 region = "us-central1"

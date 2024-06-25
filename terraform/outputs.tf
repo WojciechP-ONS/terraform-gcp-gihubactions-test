@@ -1,3 +1,3 @@
 output "bucket_name" {
-  value = google_storage_bucket.default.name
+  value = google_storage_bucket.gemini-demo-test.name
 }
