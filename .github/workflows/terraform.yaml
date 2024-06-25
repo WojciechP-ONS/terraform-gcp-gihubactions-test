@@ -23,14 +23,14 @@ jobs:
     - name: Install Google Cloud SDK
       uses: google-github-actions/setup-gcloud@v1
       with:
-        project_id: hackathon-cp-project-team-1
+        project_id: gemini-test-427500
 
     - name: Authenticate to Google Cloud
       id: auth
       uses: google-github-actions/auth@v1
       with:
-        workload_identity_provider: projects/1054015443281/locations/global/workloadIdentityPools/github-actions-pool/providers/github-actions-provider
-        service_account:  my-github-actions-sa@hackathon-cp-project-team-1.iam.gserviceaccount.com
+        workload_identity_provider: projects/970643110106/locations/global/workloadIdentityPools/github-actions-pool/providers/github-actions-provider
+        service_account:  my-github-actions-sa@gemini-test-427500.iam.gserviceaccount.com
 
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v1
@@ -41,4 +41,4 @@ jobs:
     - name: Terraform Apply --auto-approve
       run: terraform -chdir=terraform apply -auto-approve
       env:
-        GOOGLE_CLOUD_PROJECT: hackathon-cp-project-team-1
+        GOOGLE_CLOUD_PROJECT: gemini-test-427500
